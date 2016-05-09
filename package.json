@@ -1,0 +1,20 @@
+{
+  "name": "vedcal",
+  "version": "0.0.0",
+  "description": "A basic calendar app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "doubleA",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "morgan": "~1.7.0",
+    "path": "~0.12.7",
+    "cookie-parser": "~1.4.1",
+    "mongojs": "~2.4.0",
+    "ejs": "~2.4.1",
+    "nodemon": "~1.9.2"
+  }
+}

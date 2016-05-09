@@ -1,0 +1,13 @@
+body{
+  background-color: #ededed !important;
+}
+
+.day{
+  background-color: gray;
+  height: 500px;
+  border: 1px solid red;
+}
+
+.hour{
+  background-color: red;
+}
