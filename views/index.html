@@ -3,41 +3,304 @@
   <title>VedCal 2016</title>
   <link rel="stylesheet" href="public/vendor/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
   <script src="/vendor/bower_components/es6-shim/es6-shim.js"></script>
+  <!-- <script src="/vendor/bower_components/bootstrap/bootstrap.min.js"></script> -->
+  <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+
 </head>
 
-<body>
-  <div class="container">
-    <todo-app>
-      <h2 class="text-center">VedCal 2016</h2>
-    </todo-app>
-  </div>
+<body class="orange darken-3">
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="row">
-          <div class="day col-md-1 col-md-offset-2" >
+<!-- navbar -->
+
+
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
+<nav class="white">
+<div class="container">
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo orange-text text-darken-3">VedCal</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="orange-text text-darken-3" href="sass.html">Login</a></li>
+      <li><a class="orange-text text-darken-3" href="badges.html">SignUp</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button orange-text text-darken-3" href="#!" data-activates="dropdown1">Settings<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+<!-- nav ends -->
+
+<!-- calendar starts -->
+<div class="row">
+  <div class="col s12 m12 ">
+    <div class="card-panel white cal">
+      <div class="row dates grey lighten-2">
+        <div class="empty-box col s1 m1">
+        </div>
+        <div class="col s11 m11 null date-container">
+          <div class="row null">
+            <div class="col m2 s2 date">
+              <span>1 June</span>
+            </div>
+            <div class="col m2 s2 date">
+              <span>2 June</span>
+            </div>
+            <div class="col m2 s2 date">
+              <span>3 June</span>
+            </div>
+            <div class="col m2 s2 date">
+              <span>4 June</span>
+            </div>
+            <div class="col m2 s2 date">
+              <span>5 June</span>
+            </div>
+            <div class="col m2 s2 date">
+              <span>6 June</span>
+            </div>
           </div>
-          <div class="day col-md-1">
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- hours col starts -->
+        <div class="col m1 s1 grey lighten-2 hours">
+          <div class="row null">
+            <div class="col s12 m12 hour null">
+              <span>12-1 pm</span>
+            </div>
           </div>
-          <div class="day col-md-1">
+          <div class="row null">
+            <div class="col s12 m12 hour null">
+              <span>1-2 pm</span>
+            </div>
           </div>
-          <div class="day col-md-1">
+          <div class="row null">
+            <div class="col s12 m12 hour null">
+              <span>2-3 pm</span>
+            </div>
           </div>
-          <div class="day col-md-1">
+          <div class="row null">
+            <div class="col s12 m12 hour null">
+              <span>3-4 pm</span>
+            </div>
           </div>
-          <div class="day col-md-1">
+          <div class="row null">
+            <div class="col s12 m12 hour null">
+              <span>4-5 pm</span>
+            </div>
           </div>
-          <div class="day col-md-1">
+          <div class="row null">
+            <div class="col s12 m12 hour null">
+              <span>5-6 pm</span>
+            </div>
+          </div>
+          <div class="row null">
+            <div class="col s12 m12 hour null">
+              <span>6-7 pm</span>
+            </div>
+          </div>
+          <div class="row null">
+            <div class="col s12 m12 hour null">
+              <span>7-8 pm</span>
+            </div>
+          </div>
+        </div><!-- hours col ends -->
+        <div class="col s11 m11 null">
+          <div class="row null">
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+          </div>
+          <div class="row null">
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+          </div>
+          <div class="row null">
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+          </div>
+          <div class="row null">
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+          </div>
+          <div class="row null">
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+          </div>
+          <div class="row null">
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+          </div>
+          <div class="row null">
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+          </div>
+          <div class="row null">
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
+            <div class="col m2 s2 cell">
+              <span>...</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+<!-- calendar ends -->
 
-
+<!-- Tasks Modal -->
+<!-- <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal</a> -->
+<div id="tasks" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h4>Tasks for ...</h4>
+    <p>A bunch of text</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Create New</a>
+  </div>
+</div>
+<!-- Tasks Modal Ends -->
 
   <script>
   System.paths = {
@@ -50,5 +313,14 @@
   };
   System.import('todo-app');
   </script>
+
+  <script>
+  $(document).ready(function(){
+    $(".cell").click(function(){
+      $('#tasks').openModal();
+    });
+  });
+  </script>
+
 </body>
 </html>

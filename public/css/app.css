@@ -2,12 +2,77 @@ body{
   background-color: #ededed !important;
 }
 
-.day{
-  background-color: gray;
-  height: 500px;
-  border: 1px solid red;
+.null{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.cal{
+  width: 90%;
+  margin-left: 5% !important;
+  margin-top: 50px !important;
+  padding: 0px !important;
+}
+
+.date-container{
+  height: 60px;
+}
+
+.dates{
+  height: 60px;
+  line-height: 60px;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.date{
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #424242;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.empty-box{
+  border-right: 1px solid #bdbdbd;
+  height: 60px;
+  line-height: 60px;
+}
+
+.empty-box:hover{
+  background-color: #bdbdbd;
+}
+
+.hours{
+  padding: 0px !important;
+  margin: 0px !important;
+  border-top: 1px solid #bdbdbd;
 }
 
 .hour{
-  background-color: red;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #424242;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.cell{
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #424242;
+  font-size: 14px;
+  text-transform: capitalize;
+  border: 1px solid #eeeeee;
+  transition: all 0.3s ease;
+}
+
+.cell:hover{
+  background-color: #ef6c00;
+  border: 1px solid #ef6c00;
+  color: white;
+  cursor: pointer;
 }
